@@ -24,10 +24,10 @@ include the following lines:
     $verif_token = "xxx"
     Minno::assert_valid_purchase($user_id, $invitem_id, $verif_token);
 
-The assert\_valid\_purchase() function dies if the purchase is invalid. For more
-complex behavior, use the is\_valid\_purchase(), which returns a boolean.
+The `assert_valid_purchase()` function dies if the purchase is invalid. For more
+complex behavior, use the `is_valid_purchase()`, which returns a boolean.
 
-You get the userId and invitemId from the client-side minnoCallback() function
+You get the userId and invitemId from the client-side `minnoCallback()` function
 that gets executed after a user purchases an item. You can then POST these
 parameters to your server for verification before giving the user access to your
 premium service.
