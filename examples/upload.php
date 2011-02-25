@@ -3,7 +3,7 @@
 /**
  * Configuration
  *
- * You will need to customize these values to make this eample work on your own
+ * You will need to customize these values to make this example work on your own
  * server.
  */
 
