@@ -1,0 +1,102 @@
+body {
+    font-family: Arial;
+}
+
+#header {
+    background: #2e689d;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px;
+}
+
+#examplesColumn {
+    width: 600px;
+    margin: 40px auto;
+}
+
+#exampleNotif {
+    background: #ffd4d4;
+    border: 1px solid #d55555;
+    margin: 20px auto;
+    padding: 10px;
+    width: 800px;
+}
+
+.exampleCont {
+    border: 1px solid #2e689d;
+}
+
+    .exampleTitle {
+        background: #2e689d;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .exampleBody {
+        padding: 10px;
+    }
+
+    /*------ EXAMPLE 1 -------*/
+
+    #formCont {
+        overflow: hidden;
+        position: relative;
+        height: 80px;
+        width: 500px;
+        margin: 5px auto 20px auto;
+    }
+
+    #fileForm {
+        position: absolute;
+    }
+
+        .formLabel {
+            margin-right: 100px;
+            width: 100px;
+            display: inline-block;
+        }
+
+        #fileInput {
+            position: absolute;
+            width: 300px;
+        }
+
+        #fileName {
+            display: none;
+        }
+
+        #emailInput {
+            width: 258px;
+            margin-left: -5px;
+        }
+
+    #waitDiv {
+        display: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #outcomeDiv {
+        display: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #buttonCont {
+        width: 500px;
+        margin: 35px auto 15px auto;
+    }
+
+        #buyButton {
+            float: left;
+        }
+
+        #sendButton {
+            float: right;
+            display: block;
+            margin: 14px 100px 0px 0px;
+        }
