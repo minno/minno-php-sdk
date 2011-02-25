@@ -9,6 +9,11 @@ For more examples, visit our [API Documentation page](https://www.minno.co/docs)
 Usage
 -----
 
+**NOTE**: If you want to run this on your own server, you will need to create a
+  Minno button item in the Partner Dashboard. Any purchases made with that
+  button on your own server will make real charges to your Minno account that
+  can't be reverted!
+
 To run this example on your own server, you'll first need to edit the
 configuration variables at the top of the upload.php file:
 
