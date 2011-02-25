@@ -26,7 +26,8 @@ $email_username = "";
 $email_password = "";
 
 // A temporary directory to store the uploaded files. They will be deleted after
-// they're sent.  You will need to set the permissions on this directory to 777.
+// they're sent. The name of this directory should end with a trailing slash,
+// and its permissions should be set to 777.
 $temp_file_dir = "";
 
 // Your partner verification token. This can be found on the "Settings" tab in
