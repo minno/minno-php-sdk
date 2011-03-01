@@ -26,7 +26,7 @@
             </p>
             <p>
                 If you have any trouble, shoot us an email at
-<strong>&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#109;&#105;&#110;&#110;&#111;&#46;&#99;&#111;</strong>,
+                <strong>&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#109;&#105;&#110;&#110;&#111;&#46;&#99;&#111;</strong>,
                 and we'll be happy to help!
         </div>
         <div id="examplesColumn">
@@ -63,7 +63,7 @@
                             <input id="invitemIdInput"
                                    type="hidden"
                                    name="invitemId" />
-		        </form>
+		                </form>
                         <div id="waitDiv">
                             <p>
                                 Please wait while your file is sent...
@@ -161,6 +161,10 @@
                         // Notify user once file is sent
                         "success" : function(statusText) {
                             $("#waitDiv").fadeOut(function() {
+                                // Handle case where webserver rejects file if too big
+                                if (statusText.trim() == "") {
+                                    statusText = "File too big!";
+                                }
                                 $("#outcomeDiv").html(statusText);
                                 $("#outcomeDiv").fadeIn();
                             });

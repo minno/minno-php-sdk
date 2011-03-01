@@ -108,7 +108,7 @@ if ($f_size < 1024 * 1024 * 1) {
         if (PEAR::isError($mail)) {
             echo "Sorry, there was an error sending your file.";
         } else {
-            echo "Your file has been sent!";
+            echo "Cool! Your file has been sent!";
         }
 
         // Delete the file, since sent, and no longer needed
