@@ -45,8 +45,9 @@
                         that address. (Max file size is 1MB.)
                     </p>
                     <p>
-                        And best of all, you can use this irreplaceable service
-                        for only $0.25!
+                        First select your file and enter an email.
+                        Then pay $0.25 using Minno &mdash; if you're new,
+                        you can sign up by clicking the Minno button.
                     </p>
                     <div id="formCont">
                         <form id="fileForm" action="upload.php" method="POST">
