@@ -27,10 +27,10 @@ include the following lines:
 The `assert_valid_purchase()` function dies if the purchase is invalid. For more
 complex behavior, use the `is_valid_purchase()`, which returns a boolean.
 
-You get the userId and invitemId from the client-side `minnoCallback()` function
-that gets executed after a user purchases an item. You can then POST these
-parameters to your server for verification before giving the user access to your
-premium service.
+You receive the `userId` and `invitemId` from the client-side `minnoCallback()`
+function that gets executed after a user purchases an item. You can then POST
+these parameters to your server endpoint for verification before giving the user
+access to your premium service.
 
 [examples]: http://github.com/minno/minno-php-sdk/tree/master/examples
 
