@@ -72,9 +72,11 @@
                         </div>
                         <div id="outcomeDiv"></div>
                     </div>
+                    <div id="buyInstructions">
+                        Please click the Minno button to pay $0.25 and send
+                        your file.
+                    </div>
                     <div id="buttonCont">
-
-
 
                         <!-- Begin Add Minno Button -->
                         <div id="buyButton">
@@ -82,11 +84,6 @@
                         </div>
                         <!-- End Add Minno Button -->
 
-
-
-                        <button id="sendButton" disabled="true">
-                            Please Pay
-                        </button>
                         <div style="clear: both;"></div>
                     </div>
 		</div>
@@ -120,64 +117,77 @@
                 });
             });
 
+        /********************************************************************
+         * Defining the minnoPreCallback() function
+         *
+         * The callback that is executed when a user clicks the Minno button,
+         * but before the purchase is actually made. This function is optional
+         * -- if it exists, it should serve as a last-minute check to ensure
+         * that all user input required for the purchase has been obtained.
+         *
+         * If all the necessary user input has been collected, the function
+         * should return true; if not, it should alert the user what remaining
+         * input is needed, and return false. The Minno button will only make
+         * the purchase if true is returned.
+         *
+         * This particular implementation ensures that the user has selected
+         * a file and recipient prior to completing the purchase. The arguments
+         * are ignored this time.
+         */
+        function minnoPreCallback(userId, invitemId) {
+            if ("" == $("#fileInput").attr("value").trim()) {
+                alert("Please choose a file to send.");
+                return false;
+            }            
+            if ("" == $("#emailInput").attr("value").trim()) {
+                alert("Please enter a recipient email address.");
+                return false;
+            }
+            return true;
+        }
 
         /********************************************************************
-         * Defining the minnoCallback function
+         * Defining the minnoPostCallback() function
          *
          * The callback that the Minno button executes when a user completes a
-         * purchase. This is the only function that you need to define in order
-         * to get the Minno button working!
+         * purchase. This particular implementation sends the file to the
+         * specified email address.
          *
          * To see an example of the server-side code that interacts with this
-         * function, check out the upload.php in this directory.
+         * function, check out the upload.php file in this directory.
          */
-        function minnoCallback(userId, invitemId) {
+        function minnoPostCallback(userId, invitemId) {
             // Fill in the values of the hidden input elements so that the user
             // ID and the invitem ID are posted to the server. This allows the
             // the server to verify that the purchase completed successfully.
             $("#userIdInput").attr("value", userId);
             $("#invitemIdInput").attr("value", invitemId);
 
-            // Start the send button listening for clicks
-            $("#sendButton").bind("click",
-                function() {
-                    // Make UI reflect that button is now enabled
-                    $("#sendButton").unbind("click");
-                    $("#sendButton").attr("disabled", "true");
-                    $("#sendButton").css("cursor", "default");
+            // Fade in the wait div while file is uploading and emailing
+            $("#fileForm").fadeTo(250, 0, function() {
+                $("#waitDiv").fadeIn();
+            });
 
-                    // Fade in the wait div while file is uploading and emailing
-                    $("#fileForm").fadeTo(250, 0, function() {
-                        $("#waitDiv").fadeIn();
-                    });
-
-                    // Post the form to our upload.php script. Examine that file
-                    // to see what happens on the server.
-                    $("#fileForm").ajaxSubmit({
-                        // Make form plugin use iframe, not XHR, since uploading
-                        // files is tricky with XHR
-                        "iframe" : true,
-                        "resetForm" : true,
-                        // Notify user once file is sent
-                        "success" : function(statusText) {
-                            $("#waitDiv").fadeOut(function() {
-                                // Handle case where webserver rejects file if too big
-                                if (statusText.trim() == "") {
-                                    statusText = "File too big!";
-                                }
-                                $("#outcomeDiv").html(statusText);
-                                $("#outcomeDiv").fadeIn();
-                            });
+            // Post the form to our upload.php script. Examine that file
+            // to see what happens on the server.
+            $("#fileForm").ajaxSubmit({
+                // Make form plugin use iframe, not XHR, since uploading
+                // files is tricky with XHR
+                "iframe" : true,
+                "resetForm" : true,
+                // Notify user once file is sent
+                "success" : function(statusText) {
+                    $("#waitDiv").fadeOut(function() {
+                        // Handle case where webserver rejects file if too big
+                        if (statusText.trim() == "") {
+                            statusText = "File too big!";
                         }
+                        $("#outcomeDiv").html(statusText);
+                        $("#outcomeDiv").fadeIn();
                     });
-                    return false;
                 }
-            );
-
-            // Allow the user to click the send file button
-            $("#sendButton").removeAttr("disabled");
-            $("#sendButton").css("cursor", "pointer");
-            $("#sendButton").text("Send File!");
+            });
+      
         }
         </script>
     </body>

@@ -86,13 +86,19 @@ body {
         margin-top: 10px;
     }
 
+    #buyInstructions {
+        text-align: center;
+        margin: 50px;
+    }
+
     #buttonCont {
         width: 500px;
         margin: 35px auto 15px auto;
     }
 
         #buyButton {
-            float: left;
+            width: 175px;
+            margin: 10px auto;
         }
 
         #sendButton {
