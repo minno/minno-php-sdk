@@ -36,18 +36,12 @@
                 </div>
                 <div class="exampleBody">
                     <p>
-                        This example lets you send a file to a specified email
-                        address.
+                        This example lets you send a file to an email address.
                     </p>
                     <p>
                         Simply choose a file to send and enter the destination
                         email. The file will then be sent as an attachment to
                         that address. (Max file size is 1MB.)
-                    </p>
-                    <p>
-                        First select your file and enter an email.
-                        Then pay $0.25 using Minno &mdash; if you're new,
-                        you can sign up by clicking the Minno button.
                     </p>
                     <div id="formCont">
                         <form id="fileForm" action="upload.php" method="POST">
@@ -75,8 +69,10 @@
                     <div id="buyInstructions">
                         Please pay $0.25 with the Minno button, then click the
                         "Send File" button to the right.
+                        <br/><br/>
+                        If you're new, you can sign up by clicking the Minno button.
                     </div>
-                    <div id="buttonCont">
+                    <div id="buttonContbuyInstructions">
 
 
 
