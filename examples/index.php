@@ -67,9 +67,8 @@
                         <div id="outcomeDiv"></div>
                     </div>
                     <div id="buyInstructions">
-                        Please pay $0.25 with the Minno button, then click the
-                        "Send File" button to the right.
-                        <br/><br/>
+                        Please pay $0.25, then click the "Send File" button.
+                        <br/>
                         If you're new, you can sign up by clicking the Minno button.
                     </div>
                     <div id="buttonContbuyInstructions">
