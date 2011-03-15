@@ -71,7 +71,7 @@
                         <br/>
                         If you're new, you can sign up by clicking the Minno button.
                     </div>
-                    <div id="buttonContbuyInstructions">
+                    <div id="buttonCont">
 
 
 
