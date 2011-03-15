@@ -86,6 +86,11 @@ body {
         margin-top: 10px;
     }
 
+    #buyInstructions {
+        text-align: center;
+        margin: 50px auto;
+    }
+
     #buttonCont {
         width: 500px;
         margin: 35px auto 15px auto;

@@ -72,6 +72,10 @@
                         </div>
                         <div id="outcomeDiv"></div>
                     </div>
+                    <div id="buyInstructions">
+                        Please pay $0.25 with the Minno button, then click the
+                        "Send File" button to the right.
+                    </div>
                     <div id="buttonCont">
 
 
@@ -85,7 +89,7 @@
 
 
                         <button id="sendButton" disabled="true">
-                            Please Pay
+                            Send File
                         </button>
                         <div style="clear: both;"></div>
                     </div>
