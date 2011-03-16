@@ -15,8 +15,9 @@
         <div id="exampleNotif">
             <p>
                 <b>Note:</b> The examples on this page will actually <b>charge
-                your Minno account</b>. We do this so you can see <i>exactly</i>
-                what it's like to make a purchase with Minno.
+                your Minno account</b>. (If you don't have one yet, you can sign up
+                by clicking the "Buy With Minno" button.) We do this so you can see
+                <i>exactly</i> what it's like to make a purchase with Minno.
             </p>
             <p>
                 <b>But:</b> You can clear your example purchases by visiting
@@ -37,6 +38,8 @@
                 <div class="exampleBody">
                     <p>
                         This example lets you send a file to an email address.
+                        (Of course you wouldn't need this "in real life", but it's
+                        similar to services that Minno would be used for.)
                     </p>
                     <p>
                         Simply choose a file to send and enter the destination
