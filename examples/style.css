@@ -13,7 +13,7 @@ body {
 
 #examplesColumn {
     width: 600px;
-    margin: 40px auto;
+    margin: 40px auto 100px auto;
 }
 
 #exampleNotif {
