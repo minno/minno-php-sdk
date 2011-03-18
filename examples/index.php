@@ -39,7 +39,7 @@
                     <p>
                         This example lets you send a file to an email address.
                         (Of course you wouldn't need this "in real life", but it's
-                        similar to services that Minno would be used for.)
+                        similar to services that use Minno.)
                     </p>
                     <p>
                         Simply choose a file to send and enter the destination
