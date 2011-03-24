@@ -14,21 +14,20 @@
         </div>
         <div id="exampleNotif">
             <p>
-                <b>Note:</b> The examples on this page will actually <b>charge
-                your Minno account</b>. (If you don't have one yet, you can sign up
-                by clicking the "Buy With Minno" button.) We do this so you can see
-                <i>exactly</i> what it's like to make a purchase with Minno.
+                The examples on this page will charge
+                your Minno account. Don't have one? Just click the Minno
+                button below to sign up. You get <b>$2.00 in free Minno
+                credit</b> to start with &mdash; <b>no credit card</b>,
+                no forms, and you don't even have to touch your keyboard.
             </p>
             <p>
-                <b>But:</b> You can clear your example purchases by visiting
+                <b>Plus:</b> You can clear your example purchases by visiting
                 your <a href="https://www.minno.co/account#history"
-                target="_blank">account history</a>.  Look for a button in the
-                right sidebar that says <b>Clear</b>.
-            </p>
-            <p>
-                If you have any trouble, shoot us an email at
+                target="_blank">account history</a>.
+				If you have any trouble, shoot us an email at
                 <strong>&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#109;&#105;&#110;&#110;&#111;&#46;&#99;&#111;</strong>,
                 and we'll be happy to help!
+			</p>
         </div>
         <div id="examplesColumn">
             <div class="exampleCont">
@@ -72,7 +71,8 @@
                     <div id="buyInstructions">
                         Please pay $0.25, then click the "Send File" button.
                         <br/>
-                        If you're new, you can sign up by clicking the Minno button.
+                        Sign up by clicking the Minno
+                        button &mdash; no credit card required!
                     </div>
                     <div id="buttonCont">
 
