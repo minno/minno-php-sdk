@@ -55,9 +55,9 @@ body {
     }
 
         .formLabel {
-            margin-right: 100px;
-            width: 100px;
+            width: 200px;
             display: inline-block;
+            zoom: 1; *display: inline;
         }
 
         #fileInput {
