@@ -61,6 +61,7 @@ body {
         }
 
         #fileInput {
+            position: absolute;
             margin: 0px;
             padding: 2px 0px;
             width: 258px;
