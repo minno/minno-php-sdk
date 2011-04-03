@@ -150,13 +150,16 @@
             // Start the send button listening for clicks
             $("#sendButton").bind("click",
                 function() {
-                    // Make UI reflect that button is now enabled
+                    // Disable the send button, since the transfer is
+                    // happening right now
                     $("#sendButton").unbind("click");
                     $("#sendButton").attr("disabled", "true");
                     $("#sendButton").css("cursor", "default");
 
                     // Fade in the wait div while file is uploading and emailing
+                    // And hide the form
                     $("#fileForm").fadeTo(250, 0, function() {
+                        $("#fileForm").css("height", "0px");
                         $("#waitDiv").fadeIn();
                     });
 
