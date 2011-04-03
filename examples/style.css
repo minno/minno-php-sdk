@@ -63,6 +63,7 @@ body {
         #fileInput {
             position: absolute;
             width: 300px;
+            left: 0px;
         }
 
         #fileName {

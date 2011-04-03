@@ -167,7 +167,7 @@
                                 if (statusText.trim() == "") {
                                     statusText = "File too big!";
                                 }
-                                $("#outcomeDiv").html(statusText);
+                                $("#outcomeDiv").text(statusText);
                                 $("#outcomeDiv").fadeIn();
                             });
                         }
