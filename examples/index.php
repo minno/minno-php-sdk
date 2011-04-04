@@ -158,8 +158,7 @@
 
                     // Fade in the wait div while file is uploading and emailing
                     // And hide the form
-                    $("#fileForm").fadeTo(250, 0, function() {
-                        $("#fileForm").css("height", "0px");
+                    $("#fileForm").fadeOut(250, function() {
                         $("#waitDiv").fadeIn();
                     });
 
