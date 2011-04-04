@@ -30,11 +30,6 @@ $email_password = "";
 // and its permissions should be set to 777.
 $temp_file_dir = "";
 
-// Your partner verification token. This can be found on the "Settings" tab in
-// the Partner Dashboard
-$verif_token = "";
-
-
 /***********************************************************
  * Begin Minno Integration
  *
@@ -48,6 +43,7 @@ require_once "../src/minno.php";
 
 $user_id = $_POST["userId"];
 $invitem_id = $_POST["invitemId"];
+$verif_token = $_POST["verifToken"];
 
 // Dies if the purchase is invalid. You can also use is_valid_purchase(), which
 // returns a boolean

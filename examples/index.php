@@ -59,7 +59,10 @@
                             <input id="invitemIdInput"
                                    type="hidden"
                                    name="invitemId" />
-		                </form>
+                            <input id="verifTokenInput"
+                                   type="hidden"
+                                   name="verifToken" />
+		        </form>
                         <div id="waitDiv">
                             <p>
                                 Please wait while your file is sent...
@@ -98,10 +101,10 @@
             // Make sure can use trim() method
             if (typeof String.prototype.trim !== 'function') {
                 String.prototype.trim = function() {
-                    return this.replace(/^\s+|\s+$/g, ''); 
+                    return this.replace(/^\s+|\s+$/g, '');
                 }
             }
-            
+
             $(document).ready(function() {
                 // Initialize the form, so we can POST asynchronously
                 $("#fileForm").ajaxForm();
@@ -140,12 +143,14 @@
          * To see an example of the server-side code that interacts with this
          * function, check out the upload.php in this directory.
          */
-        function minnoCallback(userId, invitemId) {
+        function minnoCallback(userId, invitemId, verifToken) {
             // Fill in the values of the hidden input elements so that the user
-            // ID and the invitem ID are posted to the server. This allows the
-            // the server to verify that the purchase completed successfully.
+            // ID, invitem ID, and verifToken are posted to the server. This
+            // allows the the server to verify that the purchase completed
+            // successfully.
             $("#userIdInput").attr("value", userId);
             $("#invitemIdInput").attr("value", invitemId);
+            $("#verifTokenInput").attr("value", verifToken);
 
             // Start the send button listening for clicks
             $("#sendButton").bind("click",

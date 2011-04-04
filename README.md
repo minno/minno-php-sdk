@@ -18,19 +18,17 @@ include the following lines:
     // Make sure to set these POST variables in your minnoCallback() function
     $user_id = $_POST["userId"];
     $invitem_id = $_POST["invitemId"];
+    $verif_token = $_POST["verifToken];
 
-    // Fill this in with your partner verification token. You can get this from
-    // the "Settings" tab in the Partner Dashboard
-    $verif_token = "xxx"
     Minno::assert_valid_purchase($user_id, $invitem_id, $verif_token);
 
 The `assert_valid_purchase()` function dies if the purchase is invalid. For more
 complex behavior, use the `is_valid_purchase()`, which returns a boolean.
 
-You receive the `userId` and `invitemId` from the client-side `minnoCallback()`
-function that gets executed after a user purchases an item. You can then POST
-these parameters to your server endpoint for verification before giving the user
-access to your premium service.
+You receive the `userId`, `invitemId`, and `verifToken` request parameters from
+the client-side `minnoCallback()` function that gets executed after a user
+purchases an item. You can then POST these parameters to your server endpoint
+for verification before giving the user access to your premium item.
 
 [examples]: http://github.com/minno/minno-php-sdk/tree/master/examples
 
