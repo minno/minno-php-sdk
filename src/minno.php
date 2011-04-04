@@ -44,8 +44,7 @@ class Minno
      *
      * @return Boolean whether the purchase is valid
      */
-    public static function is_valid_purchase($user_id, $invitem_id,
-        $verif_token)
+    public static function is_valid_purchase($user_id, $invitem_id, $verif_token)
     {
         // Ping the minno.co endpoint to see if this purchase is valid
         $check_url = "https://www.minno.co/p/"
@@ -72,8 +71,7 @@ class Minno
      * @param String $verif_token the auth token allowing partners to verify
      *     purchases
      */
-    public static function assert_valid_purchase($user_id, $invitem_id,
-        $verif_token)
+    public static function assert_valid_purchase($user_id, $invitem_id, $verif_token)
     {
         if (!Minno::is_valid_purchase($user_id, $invitem_id, $verif_token)) {
             die();

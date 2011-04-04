@@ -40,10 +40,6 @@ configuration variables at the top of the upload.php file:
     // slash, and its permissions should be set to 777.
     $temp_file_dir = "";
 
-    // Your partner verification token. This can be found on the "Settings" tab
-    // in the Partner Dashboard
-    $verif_token = "";
-
 You will also need to create an inventory item in the partner dashboard and edit
 the line that adds the Minno button in index.php to reflect your newly created
 item:
