@@ -6,26 +6,25 @@
         <script type="text/javascript" src="jquery.form.js"></script>
         <script type="text/javascript" src="https://www.minno.co/minno.js"></script>
         <link type="text/css" href="style.css" media="screen" rel="stylesheet" />
-        <title>Minno Examples</title>
+        <title>BuySimple Examples</title>
     </head>
     <body>
         <div id="header">
-           Welcome to the Minno Examples Page!
+           Welcome to the BuySimple Examples Page!
         </div>
         <div id="exampleNotif">
             <p>
                 The examples on this page will charge
-                your Minno account. Don't have one? Just click the Minno
-                button below to sign up. You get <b>$2.00 in free Minno
-                credit</b> to start with &mdash; <b>no credit card</b>,
-                no forms, and you don't even have to touch your keyboard.
+                your BuySimple account. Don't have one? Just click the BuySimple button below to sign up. You get <b>$2.00
+                free</b> to start with &mdash; <b>no credit card</b>, no forms,
+                and you don't even have to touch your keyboard.
             </p>
             <p>
                 <b>Plus:</b> You can clear your example purchases by visiting
-                your <a href="https://www.minno.co/account#history"
+                your <a href="http://www.buysimple.com/account#history"
                 target="_blank">account history</a>.
 				If you have any trouble, shoot us an email at
-                <strong>&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#109;&#105;&#110;&#110;&#111;&#46;&#99;&#111;</strong>,
+                <strong>support [at] buysimple.com</strong>,
                 and we'll be happy to help!
 			</p>
         </div>
@@ -38,7 +37,7 @@
                     <p>
                         This example lets you send a file to an email address.
                         (Of course you wouldn't need this "in real life", but it's
-                        similar to services that use Minno.)
+                        similar to services that use BuySimple.)
                     </p>
                     <p>
                         Simply choose a file to send and enter the destination
@@ -74,7 +73,7 @@
                     <div id="buyInstructions">
                         Please pay $0.25, then click the "Send File" button.
                         <br/>
-                        Sign up by clicking the Minno
+                        Sign up by clicking the BuySimple
                         button &mdash; no credit card required!
                     </div>
                     <div id="buttonCont">
