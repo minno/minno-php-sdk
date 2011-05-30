@@ -140,7 +140,8 @@
          * to get the Minno button working!
          *
          * To see an example of the server-side code that interacts with this
-         * function, check out the upload.php in this directory.
+         * function, check out the upload.php file in this directory.
+         * (Download at https://github.com/minno/minno-php-sdk.)
          */
         function minnoCallback(userId, invitemId, verifToken) {
             // Fill in the values of the hidden input elements so that the user
